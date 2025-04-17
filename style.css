@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Restco';
+    src: url('fonts/restco-font.woff2') format('woff2'),
+         url('fonts/restco-font.woff') format('woff'),
+         url('fonts/restco-font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://img.freepik.com/free-photo/healthy-lunch-go-packed-lunch-box_1220-4541.jpg?t=st=1740722099~exp=1740725699~hmac=c797690b89682fecdc9e43669f4b5499f6f0f23b0665da22f9a8bc34b0c304d5&w=1800');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 30px;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: #ffcb77;
+}
+
+.container {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    text-align: left;
+    color: white;
+    max-width: 50%;
+}
+
+.container h1 {
+    font-size: 4em;
+    font-weight: 700;
+   
+    color: #341010;
+    margin-bottom: 15px;
+    font-family: 'times new roman', cursive;
+}
+
+.container p {
+    font-size: 1.1em;
+    
+    font-weight: 400;
+    color: #021317;
+}
+
+.container .quote {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #16a085;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+button {
+    background-color: #2980b9;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #1f618d;
+}

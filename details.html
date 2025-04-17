@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planning Tool</title>
+    <style>
+        body {  
+        font-family: 'Times New Roman', Times, serif;
+        background: url(https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)no-repeat center center fixed; background-size: cover;
+        font-size: 18pt;
+        color: whitesmoke;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            background:rgba(0, 0, 0, 0.45);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+        h2 {
+            color: whitesmoke;
+            margin-bottom: 20px;
+        }
+        input, select, button {
+            width: 95%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #d8bfd8;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        input:focus, select:focus {
+            border-color: #ff7f50;
+            outline: none;
+            box-shadow: 0 0 8px rgba(255, 127, 80, 0.5);
+        }
+        button {
+            background: #166c21;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background: #a4c6aa;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Meal Planning Tool</h2>
+        <form id="meal">
+            <label for="name">Name</label>
+            <input type="text" name="name" required>
+
+            <label for="age">Age</label>
+            <input type="number" name="age" required>
+
+            <label for="budget">Budget(monthly INR)</label>
+            <input type="number" name="budget" required>
+
+            <label for="diet">Dietary Preference</label>
+            <select id="diet" name="diet" required>
+                <option value="" disabled selected>Select</option>
+                <option value="Veg">Vegetarian</option>
+                <option value="Veg">Non-Vegetarian</option>
+                <option value="Veg">Gluten Free</option>
+                <option value="Veg">Vegen</option>
+            </select>
+            
+            <label for="allergy">Any Allergies</label>
+            <input type="text" name="allergy" placeholder="Enter your allergies">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
